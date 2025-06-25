@@ -3,35 +3,37 @@
 > A Smart TV display app for the Faculty of Exact Sciences – University of Bechar  
 > Built using **Jetpack Compose** and **Firebase**, this app automatically showcases quotes, upcoming events, and institutional links on a dedicated display screen.
 
-![App Preview](https://github.com/user-attachments/assets/df3af1f5-4695-44b7-94d4-be612fcac220) <!-- Replace this with your actual screenshot filename -->
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/df3af1f5-4695-44b7-94d4-be612fcac220" alt="App Preview" width="600"/>
+</p>
 
 ---
 
 ## 🎯 Features
 
-- 🔁 **Auto-scrolling Carousel** for upcoming events
-- 🕒 **Live Clock Display** (GMT+1)
-- 💬 **Inspirational Quotes** pulled from Firestore
-- 📅 **Dynamic Event Cards**: title, short description, and date
-- 📸 **Faculty Branding & Logos**
-- 📲 **QR Code Integration** to social media and university website
+- 🔁 **Auto-scrolling Carousel** for upcoming events  
+- 🕒 **Live Clock Display** (GMT+1)  
+- 💬 **Inspirational Quotes** pulled from Firestore  
+- 📅 **Dynamic Event Cards**: title, short description, and date  
+- 📸 **Faculty Branding & Logos**  
+- 📲 **QR Code Integration** to social media and university website  
 
 ---
 
 ## 🔧 Tech Stack
 
-- [Jetpack Compose](https://developer.android.com/jetpack/compose)
-- [Firebase Firestore](https://firebase.google.com/docs/firestore)
-- [Firebase Storage](https://firebase.google.com/docs/storage)
-- [Kotlin](https://kotlinlang.org/)
-- Android Smart TV (Deployment)
+- [Jetpack Compose](https://developer.android.com/jetpack/compose)  
+- [Firebase Firestore](https://firebase.google.com/docs/firestore)  
+- [Firebase Storage](https://firebase.google.com/docs/storage)  
+- [Kotlin](https://kotlinlang.org/)  
+- Android Smart TV (Deployment)  
 
 ---
 
 ## 📂 Firebase Data Structure
 
-### 🔹 `events` Collection:
-Each document follows this structure:
+### 🔹 `events` Collection
+
 ```json
 {
   "current": false,
@@ -44,20 +46,28 @@ Each document follows this structure:
   },
   "title": "AI in Education"
 }
+````
 
-### 🔹 quotes Collection:
+### 🔹 `quotes` Collection
 
+```json
 {
   "text": "Great work needs passion."
 }
+```
 
-### 🖥️ Usage & Deployment:
-This application runs on a Smart TV in a continuous display mode. It's intended for in-house usage in faculty halls or entrance areas. Content is updated live through Firestore without any need to recompile or redeploy the app.
+---
 
-### 📌 Notes:
-Time is synced to GMT+1.
+## 🖥️ Usage & Deployment
 
-Carousel uses Jetpack Compose and is auto-scrolling.
+This application runs on a Smart TV in a continuous display mode.
+It's intended for **in-house usage** in faculty halls or entrance areas.
+Content is updated live through Firestore without needing to recompile or redeploy the app.
 
-Firebase rules and environment variables are securely handled outside the source code (not included here).
+---
 
+## 📌 Notes
+
+* 🕒 Time is synced to **GMT+1**
+* 🔁 Carousel is built using **Jetpack Compose** and scrolls automatically
+* 🔐 Firebase rules and environment variables are stored securely and not exposed in this repo
